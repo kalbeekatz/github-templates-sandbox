@@ -32,13 +32,9 @@ body:
     attributes:
       label: 再現手順
       value: 1. 〜を開く
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: 解決手段
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: 備考
