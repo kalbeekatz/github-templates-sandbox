@@ -39,19 +39,6 @@ body:
       label: 解決手段
     validations:
       required: false
-  - type: checkboxes
-    attributes:
-      label: 操作環境
-      description: 再現した端末、ブラウザを選択してください
-      options:
-        - label: Mac
-        - label: Windows
-        - label: iPhone
-        - label: Android
-        - label: その他OS
-        - label: safari
-        - label: Chrome
-        - label: その他ブラウザ
   - type: textarea
     attributes:
       label: 備考
