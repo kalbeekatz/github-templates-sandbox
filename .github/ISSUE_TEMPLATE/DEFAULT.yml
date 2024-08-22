@@ -2,15 +2,51 @@
 name: Bug Report
 description: File a bug report.
 title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+labels: ["bug"]
+# projects: []
+# assignees: []
 body:
-  - type: markdown
+  - type: dropdown
+    id: application
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: 発生アプリ
+      options:
+        - webapp
+        - extension
+        - cdk(AWS)
+        - それ以外
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 想定される挙動
+      placeholder: 〜〜をクリックした場合、〜〜になる
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 現在の挙動
+      placeholder: 〜〜をクリックした場合、〜〜になる
+      description: ※可能であれば再現のキャプチャを添付してください
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 再現手順
+      value: 1. 〜〜を開く
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 解決手段
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 備考
+    validations:
+      required: false
   - type: input
     id: contact
     attributes:
@@ -26,17 +62,6 @@ body:
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
     validations:
       required: true
   - type: dropdown
