@@ -15,14 +15,14 @@ body:
         - cdk(AWS)
         - それ以外
       default: 0
-    validations:
-      required: true
+      validations:
+        required: true
   - type: textarea
     attributes:
       label: 想定される挙動
       placeholder: 〜をクリックした場合、〜になる
-    validations:
-      required: true
+      validations:
+        required: true
   - type: textarea
     attributes:
       label: 現在の挙動
