@@ -19,6 +19,7 @@ body:
     attributes:
       label: 想定される挙動
       placeholder: 〜をクリックした場合、〜になる
+      value: 
     validations:
       required: true
   - type: textarea
