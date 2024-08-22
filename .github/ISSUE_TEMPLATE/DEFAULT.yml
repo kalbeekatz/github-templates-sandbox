@@ -21,20 +21,20 @@ body:
   - type: textarea
     attributes:
       label: 想定される挙動
-      placeholder: 〜〜をクリックした場合、〜〜になる
+      placeholder: 〜をクリックした場合、〜になる
     validations:
       required: true
   - type: textarea
     attributes:
       label: 現在の挙動
-      placeholder: 〜〜をクリックした場合、〜〜になる
+      placeholder: 〜をクリックした場合、〜になる
       description: ※可能であれば再現のキャプチャを添付してください
     validations:
       required: true
   - type: textarea
     attributes:
       label: 再現手順
-      value: 1. 〜〜を開く
+      value: 1. 〜を開く
     validations:
       required: false
   - type: textarea
