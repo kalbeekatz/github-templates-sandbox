@@ -1,0 +1,17 @@
+
+name: Feature Request
+description: 機能追加チケット作成用のテンプレート
+title: "[Feature]: "
+# labels: []
+# projects: []
+# assignees: []
+body:
+  - type: textarea
+    attributes:
+      label: 機能の説明
+  - type: textarea
+    attributes:
+      label: ユースケース
+  - type: textarea
+    attributes:
+      label: 備考

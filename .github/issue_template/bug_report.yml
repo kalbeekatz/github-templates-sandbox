@@ -1,6 +1,6 @@
 
 name: Bug Report
-description: 障害チケット作成用のテンプレートです。Get startedをクリックして登録しましょう。
+description: 障害チケット作成用のテンプレート
 title: "[Bug]: "
 labels: ["bug"]
 # projects: []
